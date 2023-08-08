@@ -12,6 +12,10 @@ public interface EmployeeRepo extends JpaRepository<Employee,Integer> {
         List<Employee> findByDept(String dept);
     
         Optional<Employee> findById(Long id);
+
+        static Employee updateEmp(Employee employee) {
+            return null;
+        }
         
     }
 
